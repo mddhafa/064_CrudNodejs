@@ -7,6 +7,7 @@ const app = express();
 const PORT = 8000;
 
 app.use(bodyParser.json());
+app.use(express.json());
 
 app.use("/motor", motorRoute);
 app.use("/mobil", mobilRoute);
